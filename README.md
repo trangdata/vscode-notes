@@ -94,6 +94,21 @@ Things just work out of the box. Minimal customization required.
 - better multi language support
 - function hover
 
+## aws commands
+
+```
+# set up keys
+aws configure set aws_access_key_id your_access_key --profile riku
+aws configure set aws_secret_access_key you_secret_key --profile riku
+
+# example: copy a local file to the researchanalytics bucket
+aws s3 --profile riku cp test-trang.txt s3://celgene-rnd-riku-researchanalytics/Evotec/Supplementary/
+```
+
+TODO
+
+aws s3 R package
+
 ## Additional readings
 
 - https://code.visualstudio.com/docs/editor/workspaces
